@@ -8,11 +8,11 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=4;
+		nextID=6;
 	};
 	class Camera
 	{
-		pos[]={4097.0054,21.247377,4072.1428};
+		pos[]={4088.0259,21.247377,4087.387};
 		dir[]={-0.0056849401,-0.48380423,0.87516642};
 		up[]={-0.0031428791,0.87517744,0.48379588};
 		aside[]={0.99998724,-8.069037e-008,0.0064963154};
@@ -21,9 +21,9 @@ class EditorData
 binarizationWanted=0;
 addons[]=
 {
-	"A3_Characters_F",
 	"A3_Modules_F_Multiplayer",
-	"A3_Modules_F_Curator_Curator"
+	"A3_Modules_F_Curator_Curator",
+	"A3_Characters_F"
 };
 class AddonsMetaData
 {
@@ -32,22 +32,22 @@ class AddonsMetaData
 		items=3;
 		class Item0
 		{
-			className="A3_Characters_F";
-			name="Arma 3 Alpha - Characters and Clothing";
-			author="Bohemia Interactive";
-			url="http://www.arma3.com";
-		};
-		class Item1
-		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item2
+		class Item1
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item2
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
@@ -81,37 +81,6 @@ class Mission
 	{
 		items=3;
 		class Item0
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4100.0474,5.0014353,4112.665};
-					};
-					side="West";
-					flags=7;
-					class Attributes
-					{
-						isPlayer=1;
-					};
-					id=1;
-					type="B_soldier_AR_F";
-					atlOffset=-3.8146973e-006;
-				};
-			};
-			class Attributes
-			{
-			};
-			id=0;
-			atlOffset=-3.8146973e-006;
-		};
-		class Item1
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -220,7 +189,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item2
+		class Item1
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -328,6 +297,37 @@ class Mission
 				};
 				nAttributes=5;
 			};
+		};
+		class Item2
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4095.8486,5.0013475,4109.2979};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						isPlayer=1;
+					};
+					id=5;
+					type="B_medic_F";
+					atlOffset=-9.1552734e-005;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=4;
+			atlOffset=-9.1552734e-005;
 		};
 	};
 };
